@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Just Video | Film camera rental and post-production, Mumbai</title>
+  <meta name="description" content="Just Video Broadcast Pvt Ltd, Mumbai: film camera and lens rental, editing, DI, VFX, sound and production since 2002.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="vbox" role="dialog" aria-modal="true" aria-label="Official Teaser" aria-hidden="true">
+    <div class="vin">
+      <button class="vx" id="vclose" aria-label="Close video">&times;</button>
+      <video id="vfull" controls playsinline preload="none"></video>
+      <p class="vt">Official Teaser</p>
+    </div>
+  </div>
+  <div id="intro"><video id="introVid" poster="images/intro-poster.jpg" playsinline preload="auto" aria-hidden="true"></video><canvas id="introFx" aria-hidden="true"></canvas><i id="introBar"></i><button id="introSound" type="button" aria-label="Turn sound on" hidden>Tap for sound</button><button id="introSkip" type="button">Skip</button></div>
+<div class="progress" aria-hidden="true"></div>
+
+<div class="wrap">
+  <div class="sample mono">The movie work, updates and videos below are sample content. Replace them with your real ones.</div>
+
+  <header class="top">
+    <a class="brand" href="#top">Just <b>Video</b></a>
+    <nav aria-label="Sections">
+      <a href="#company">Company</a>
+      <a href="#rental">Rental</a>
+      <a href="#clients">Clients</a>
+      <a href="#kaam">Work</a>
+      <a href="#reels">Reels</a>
+      <a href="#updates">Updates</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero-full" id="hero">
+      <video id="reelVideo" class="hv" poster="images/hero-poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-label="A laptop showing a camera website, with the camera coming apart into lens, sensor and body"></video>
+      <div class="hv-shade"></div>
+      <div class="hero-in">
+        <p class="mono rise" style="--d:.05s">Reel 3 of 5 &middot; Editing in progress</p>
+        <h1 class="rise" style="--d:.15s">See the work, <em>follow the movie.</em></h1>
+        <p class="lead rise" style="--d:.3s">Every update, every video and all the work done so far, in one place. From the first shoot to the final cut.</p>
+        <div class="cta-row rise" style="--d:.45s">
+          <a class="btn primary" href="#updates">Latest update</a>
+          <a class="btn" href="#videos">Watch videos</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="track">
+        <div class="set"><span>Reel 3 editing in progress</span><span>126 scenes shot</span><span>Teaser is out</span><span>Sound design started</span><span>Next: fine cut</span></div>
+        <div class="set"><span>Reel 3 editing in progress</span><span>126 scenes shot</span><span>Teaser is out</span><span>Sound design started</span><span>Next: fine cut</span></div>
+      </div>
+    </div>
+
+    <section class="strip-sec" id="films">
+      <div class="sec-head"><h2>Films we have worked on</h2><span class="mono">46 posters &middot; Hindi &amp; Marathi cinema</span></div>
+      <div class="strip-wrap" id="stripWrap">
+        <canvas id="stripCanvas" role="img" aria-label="A scrolling film strip showing the posters of 46 films we have worked on"></canvas>
+        <div class="strip-cap">Posters of films we have worked on</div>
+      </div>
+    </section>
+
+    <section class="serials" id="serials">
+      <div class="sr-band">
+        <div class="sr-in">
+          <div class="sr-title"><h2>Serials we have worked on</h2><span class="mono">TV serials and shows</span></div>
+          <div class="sr-grid">
+            <figure class="sr"><div class="sr-img"><img style="--op:center 20%" loading="lazy" alt="Left Right Left, a TV serial" src="images/serials/left-right-left.jpg"></div><figcaption><span class="mono">TV serial</span><b>Left Right Left</b></figcaption></figure>
+            <figure class="sr"><div class="sr-img"><img style="--op:12% center" loading="lazy" alt="Indian Idol, a TV show" src="images/serials/indian-idol.jpg"></div><figcaption><span class="mono">TV show</span><b>Indian Idol</b></figcaption></figure>
+            <figure class="sr"><div class="sr-img"><img style="--op:center top" loading="lazy" alt="Jassi Jaissi Koi Nahin, a TV serial" src="images/serials/jassi-jaissi-koi-nahin.jpg"></div><figcaption><span class="mono">TV serial</span><b>Jassi Jaissi Koi Nahin</b></figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="sec-head"><h2>Company</h2><span class="mono">Since 2002 &middot; Mumbai</span></div>
+      <div class="co-intro">
+        <h3 class="vision">A leading and <em>self-sufficient</em> media house, across many formats of media.</h3>
+        <div>
+          <p>We started in broadcast, moved into film cameras in 2010 and built a full post-production studio. Today we serve high-end and budget filmmakers and producers from two facilities in Mumbai's media hub.</p>
+          <span class="mono legal">Just Video Broadcast Private Limited</span>
+        </div>
+      </div>
+
+      <ul class="since" aria-label="Company timeline">
+        <li><b>2002</b><span>Entered the media business with broadcast.</span></li>
+        <li><b>2010</b><span>Moved into the film vertical, investing in cameras and accessories.</span></li>
+        <li><b>Post studio</b><span>Set up a full-fledged studio for post services.</span></li>
+        <li><b>Production</b><span>Short films, documentaries, TV content and feature films.</span></li>
+      </ul>
+
+      <ul class="facts-grid" id="facts">
+        <li><b><span data-count="8" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">8</span></b><span>digital cameras with accessories</span></li>
+        <li><b><span data-count="7" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">7</span></b><span>edit rooms</span></li>
+        <li><b><span data-count="2" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">2</span></b><span>sound and dubbing studios</span></li>
+        <li><b><span data-count="2" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">2</span></b><span>mixing studios</span></li>
+        <li><b><span data-count="2" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">2</span></b><span>DI suites</span></li>
+        <li><b><span data-count="1" style="display:inline;margin:0;font-size:inherit;color:inherit;line-height:inherit">1</span></b><span>smoke room</span></li>
+      </ul>
+
+      <h3 class="sub-head">Camera, post and sound under one roof</h3>
+      <div class="svc">
+        <div>
+          <h3>Camera</h3>
+          <ul>
+            <li>Film camera rentals</li>
+            <li>Lenses and film equipment</li>
+            <li>Production and co-production</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Post</h3>
+          <ul>
+            <li>Editing</li>
+            <li>VFX and animation</li>
+            <li>DI baselight<small>Colour grading</small></li>
+            <li>DI Scratch and Resolve<small>2D and 3D stereo</small></li>
+            <li>4K DCP and LTO mastering</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sound</h3>
+          <ul>
+            <li>Dubbing</li>
+            <li>Recording</li>
+            <li>Mixing 5.1 and Atmos</li>
+            <li>Visual promotion</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Camera and lens rental</h3>
+      <div class="flyer" id="flyer">
+        <h3 class="fl-title" aria-label="All kinds of film cameras, lenses and film equipment">
+          <span class="ln"><i data-a style="--an:flUp;--d:.1s">All kinds of</i></span>
+          <span class="ln"><i data-a style="--an:flUp;--d:.2s">film cameras,</i></span>
+          <span class="ln"><i data-a style="--an:flUp;--d:.3s">lenses &amp;</i></span>
+          <span class="ln"><i class="hl" data-a style="--an:flUp;--d:.4s">film equipment</i></span>
+        </h3>
+        <div class="fl-hello">
+          <i class="bar" data-a style="--an:flBar;--d:.3s"></i>
+          <div data-a style="--an:flFadeR;--d:.7s"><b>Hello,</b><p>We are experts in providing all kinds and the right solutions for your film equipment.</p></div>
+        </div>
+        <div class="fl-band">
+          <i class="bar" data-a style="--an:flBar;--d:.9s"></i>
+          <div class="fl-items"><span data-a style="--an:flFadeL;--d:1.3s">All types of film cameras</span><b data-a style="--an:flPop;--d:1.5s">&amp;</b><span data-a style="--an:flFadeL;--d:1.7s">All types of lenses</span></div>
+          <div class="fl-offer"><span data-a style="--an:flPop;--d:1.1s">We offer</span></div>
+        </div>
+        <div class="fl-photos">
+          <figure data-a style="--an:flReveal;--d:1.9s"><img src="images/rental/cinema-lenses.jpg" alt="Set of cinema lenses on a table" width="336" height="182"><figcaption>Cinema lenses</figcaption></figure>
+          <figure data-a style="--an:flReveal;--d:2.1s"><img src="images/rental/film-cameras.jpg" alt="Film camera with lens" width="296" height="118"><figcaption>Film cameras</figcaption></figure>
+          <figure data-a style="--an:flReveal;--d:2.3s"><img src="images/rental/camera-rigs.jpg" alt="Film camera rig on a tripod" width="204" height="118"><figcaption>Camera rigs</figcaption></figure>
+        </div>
+        <div class="fl-contact">
+          <span class="fl-ring" data-a style="--an:flPop;--d:2.5s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+          <div data-a style="--an:flFadeR;--d:2.6s"><small>Contact us now</small><a href="tel:+919867028666">98670 28666</a></div>
+        </div>
+      </div>
+
+      <h3 class="sub-head">Trusted by</h3>
+      <figure class="trust">
+        <blockquote>&ldquo;Empanelled film production house for more than 2 years. The performance of the agency has been satisfactory.&rdquo;</blockquote>
+        <figcaption><b>Indian Oil Corporation Limited</b>, Marketing Division. Experience certificate dated 19 August 2021.</figcaption>
+      </figure>
+    </section>
+
+    <section class="rent" id="rental">
+      <div class="sec-head"><h2>Rental equipment</h2><span class="mono">Cinema cameras, lenses and support gear</span></div>
+      <ul class="rent-facts"><li><b>4</b>camera setups</li><li><b>5</b>lens series</li><li><b>5</b>filter types</li><li><b>8</b>accessories</li></ul>
+      <div class="eq-tabs" role="tablist" aria-label="Equipment categories">
+        <button class="eq-tab" role="tab" id="tab-camera" aria-controls="panel-camera" aria-selected="true" type="button">Camera <small>4</small></button>
+        <button class="eq-tab" role="tab" id="tab-lenses" aria-controls="panel-lenses" aria-selected="false" type="button">Lenses <small>10</small></button>
+        <button class="eq-tab" role="tab" id="tab-acc" aria-controls="panel-acc" aria-selected="false" type="button">Camera and monitoring equipment <small>8</small></button>
+      </div>
+      <div class="eq-panel" id="panel-camera" data-cat="camera" role="tabpanel" aria-labelledby="tab-camera">
+        <div class="eq-grid" style="--min:440px"><article class="eq"><div class="eq-img"><img loading="lazy" alt="ARRI ALEXA Mini LF" src="images/products/arri-alexa-mini-lf.jpg"><span class="eq-no">01</span></div><div class="eq-body"><h3>ARRI ALEXA Mini LF</h3><ul><li>2 camera bodies</li><li>ARRI Signature Prime / Supreme Prime lenses</li><li>Full camera setup</li></ul></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Sony VENICE 2 8K" src="images/products/sony-venice-2-8k.jpg"><span class="eq-no">02</span></div><div class="eq-body"><h3>Sony VENICE 2 8K</h3><ul><li>2 camera bodies</li><li>Zeiss Supreme Prime lenses</li><li>Rialto extension system</li></ul></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="RED HELIUM 8K" src="images/products/red-helium-8k.jpg"><span class="eq-no">03</span></div><div class="eq-body"><h3>RED HELIUM 8K</h3><ul><li>Full camera setup</li><li>Zeiss Supreme / Master / Ultra Prime lenses</li><li>ND filters</li></ul></div></article><article class="eq"><div class="eq-img wide"><img loading="lazy" alt="Sony VENICE 2 + RIALTO Extension" src="images/products/sony-venice-2-rialto-extension.jpg"><span class="eq-no">04</span></div><div class="eq-body"><h3>Sony VENICE 2 + RIALTO Extension</h3><ul><li>2 bodies</li><li>Full-frame 8K setup</li><li>Rialto extension system</li></ul></div></article></div>
+      </div>
+      <div class="eq-panel" id="panel-lenses" data-cat="lenses" role="tabpanel" aria-labelledby="tab-lenses">
+        <div class="eq-grid" style="--min:260px"><article class="eq"><div class="eq-img"><img loading="lazy" alt="ARRI Signature Prime" src="images/products/arri-signature-prime.jpg"><span class="eq-no">05</span></div><div class="eq-body"><h3>ARRI Signature Prime</h3><p>Large-format cinema prime lens series. Used with the ARRI ALEXA Mini LF.</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="ZEISS Supreme Prime" src="images/products/zeiss-supreme-prime.jpg"><span class="eq-no">06</span></div><div class="eq-body"><h3>ZEISS Supreme Prime</h3><p>Cinema primes for Sony VENICE 2 and RED setups.</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="ZEISS Master Prime" src="images/products/zeiss-master-prime.jpg"><span class="eq-no">07</span></div><div class="eq-body"><h3>ZEISS Master Prime</h3><p>Prime lens option for RED HELIUM.</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="ZEISS Ultra Prime" src="images/products/zeiss-ultra-prime.jpg"><span class="eq-no">08</span></div><div class="eq-body"><h3>ZEISS Ultra Prime</h3><p>Alternative prime lens series for RED HELIUM.</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="COOKE S7/i Full Frame" src="images/products/cooke-s7-i-full-frame.jpg"><span class="eq-no">09</span></div><div class="eq-body"><h3>COOKE S7/i Full Frame</h3><ul><li>40mm lens</li><li>65mm lens</li><li>Full-frame setup</li></ul></div></article></div>
+        <div class="eq-sub"><h3>Filters</h3></div>
+        <div class="eq-grid" style="--min:190px"><article class="eq"><div class="eq-img"><img loading="lazy" alt="Ultra Polarizer" src="images/products/ultra-polarizer.jpg"></div><div class="eq-body"><h3>Ultra Polarizer</h3><span class="eq-qty">2 pcs</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="ND 3.6 / 9" src="images/products/nd-3-6-9.jpg"></div><div class="eq-body"><h3>ND 3.6 / 9</h3><span class="eq-qty">2 pcs</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Black Pro-Mist" src="images/products/black-pro-mist.jpg"></div><div class="eq-body"><h3>Black Pro-Mist</h3><p>1/8 and 1/4</p><span class="eq-qty">2 pcs</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Hollywood Black Magic filter" src="images/products/hollywood-black-magic-filter.jpg"></div><div class="eq-body"><h3>Hollywood Black Magic</h3><p>HBM, 1/8 and 1/4</p><span class="eq-qty">2 pcs</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Glimmer" src="images/products/glimmer.jpg"></div><div class="eq-body"><h3>Glimmer</h3><p>1/2</p><span class="eq-qty">2 pcs</span></div></article></div>
+      </div>
+      <div class="eq-panel" id="panel-acc" data-cat="acc" role="tabpanel" aria-labelledby="tab-acc">
+        <div class="eq-grid" style="--min:230px"><article class="eq"><div class="eq-img"><img loading="lazy" alt="Teradek" src="images/products/teradek.jpg"><span class="eq-no">12</span></div><div class="eq-body"><h3>Teradek</h3><span class="eq-qty">2 units</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Shogun Monitor" src="images/products/shogun-monitor.jpg"><span class="eq-no">13</span></div><div class="eq-body"><h3>Shogun Monitor</h3><span class="eq-qty">2 units</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="cMotion Follow Focus" src="images/products/cmotion-follow-focus.jpg"><span class="eq-no">14</span></div><div class="eq-body"><h3>cMotion Follow Focus</h3><span class="eq-qty">2 units</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Ronin 2 Gimbal" src="images/products/ronin-2-gimbal.jpg"><span class="eq-no">15</span></div><div class="eq-body"><h3>Ronin 2 Gimbal</h3><p>With Mimic</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Director Monitor" src="images/products/director-monitor.jpg"><span class="eq-no">16</span></div><div class="eq-body"><h3>Director Monitor</h3><p>17-inch director monitor</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="OConnor 2575D Head" src="images/products/oconnor-2575d-head.jpg"><span class="eq-no">17</span></div><div class="eq-body"><h3>OConnor 2575D Head</h3><span class="eq-qty">2 units</span></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Tripods" src="images/products/tripods.jpg"><span class="eq-no">18</span></div><div class="eq-body"><h3>Tripods</h3><p>Large and small</p></div></article><article class="eq"><div class="eq-img"><img loading="lazy" alt="Palta Setup" src="images/products/palta-setup.jpg"><span class="eq-no">19</span></div><div class="eq-body"><h3>Palta Setup</h3><span class="eq-qty">2 units</span></div></article></div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="sec-head"><h2>Our clients</h2><span class="mono">Some of the brands and studios we work with</span></div>
+      <div class="client-group">
+        <span class="mono">Corporate and public sector</span>
+        <ul class="clients">
+          <li><b>IOCL</b><small>Indian Oil Corporation Limited</small></li>
+          <li><b>ONGC</b><small>Oil and Natural Gas Corporation</small></li>
+          <li><b>Colgate-Palmolive</b><small>Colgate-Palmolive (India) Limited</small></li>
+        </ul>
+      </div>
+      <div class="client-group">
+        <span class="mono">Film and television</span>
+        <ul class="clients">
+          <li><b>Yash Raj Films</b></li>
+          <li><b>Dharma Productions</b></li>
+          <li><b>Excel Entertainment</b></li>
+          <li><b>Endemol</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="kaam">
+      <div class="sec-head"><h2>Work so far</h2><span class="mono">Update: 12 Oct 2026</span></div>
+      <div class="work" id="work">
+        <div>
+          <div class="big">
+            <div class="num"><span data-count="41">41</span><small>%</small></div>
+            <div class="mono">Of the whole movie is done</div>
+          </div>
+          <ul class="facts">
+            <li><b><span data-count="38">38</span> min</b><span>runtime locked (out of 95 min)</span></li>
+            <li><b><span data-count="126">126</span></b><span>scenes shot</span></li>
+            <li><b><span data-count="14">14</span> hrs</b><span>raw footage</span></li>
+            <li><b><span data-count="9">9</span></b><span>shoot days</span></li>
+          </ul>
+        </div>
+        <ul class="bars">
+          <li class="done"><span class="name">Shooting</span><span class="pct">90%</span><span class="track"><span class="fill" style="width:90%"></span></span><span class="note">Only 2 scenes left.</span></li>
+          <li><span class="name">Editing</span><span class="pct">60%</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="note">Reel 3 rough cut in progress.</span></li>
+          <li><span class="name">Sound</span><span class="pct">30%</span><span class="track"><span class="fill" style="width:30%"></span></span><span class="note">Dialogue clean-up has started.</span></li>
+          <li><span class="name">Color</span><span class="pct">15%</span><span class="track"><span class="fill" style="width:15%"></span></span></li>
+          <li><span class="name">VFX</span><span class="pct">10%</span><span class="track"><span class="fill" style="width:10%"></span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="reels">
+      <div class="sec-head"><h2>Reel status</h2><span class="mono">5 reels &middot; about 19 min each</span></div>
+      <div class="strip">
+        <div class="perf"></div>
+        <div class="frames">
+          <div class="frame"><span class="mono">Reel 1</span><div class="meter"><i style="height:100%"></i></div><small>Locked</small></div>
+          <div class="frame"><span class="mono">Reel 2</span><div class="meter"><i style="height:80%"></i></div><small>Fine cut</small></div>
+          <div class="frame"><span class="mono">Reel 3</span><div class="meter"><i style="height:45%"></i></div><small>Rough cut</small></div>
+          <div class="frame"><span class="mono">Reel 4</span><div class="meter"><i style="height:10%"></i></div><small>Assembly</small></div>
+          <div class="frame"><span class="mono">Reel 5</span><div class="meter"><i style="height:0%"></i></div><small>Shoot pending</small></div>
+        </div>
+        <div class="perf b"></div>
+      </div>
+    </section>
+
+    <section id="updates">
+      <div class="sec-head"><h2>Movie updates</h2><span class="mono">Newest first</span></div>
+      <ol class="log">
+        <li>
+          <span class="when">12 Oct 2026</span>
+          <div><span class="tag">Edit</span><h3>Reel 3 rough cut started</h3><p>The first 8 minutes are assembled. The order of the climax scenes is still to be decided.</p></div>
+        </li>
+        <li>
+          <span class="when">04 Oct 2026</span>
+          <div><span class="tag">Shoot</span><h3>Night shoot wrapped</h3><p>All the night scenes are done. Only 2 scenes remain.</p></div>
+        </li>
+        <li>
+          <span class="when">27 Sep 2026</span>
+          <div><span class="tag">Release</span><h3>Teaser uploaded</h3><p>The first teaser is 48 seconds long. You can watch it in the videos below.</p></div>
+        </li>
+        <li>
+          <span class="when">Next</span>
+          <div><span class="tag next">Upcoming</span><h3>Reel 3 fine cut</h3><p>Finish the rough cut by the end of this week, then start the fine cut.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="videos">
+      <div class="sec-head"><h2>Videos</h2><span class="mono">6 videos</span></div>
+      <div class="shelf">
+        <article class="card vcard" id="teaserCard" data-title="Official Teaser" tabindex="0" role="button" aria-label="Play Official Teaser"><div class="thumb t1" style="background-image:url(images/videos/official-teaser.jpg)"><video class="pv" id="teaserPrev" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">0:38</span><i class="pbar"></i></div><span class="mono">Teaser</span><h3>Official Teaser</h3></article>
+        <article class="card vcard" id="shootCard" data-file="videos/shootday5.mp4" data-start="20" data-title="Shoot Day 5" tabindex="0" role="button" aria-label="Play Shoot Day 5"><div class="thumb t2" style="background-image:url(images/videos/shoot-day-5.jpg)"><video class="pv" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">3:11</span><i class="pbar" style="--dur:30s"></i></div><span class="mono">Behind the scenes</span><h3>Shoot Day 5</h3></article>
+        <article class="card vcard" id="reel2Card" data-file="videos/reel2.mp4" data-start="8" data-title="Reel 2 Rough Cut" tabindex="0" role="button" aria-label="Play Reel 2 Rough Cut"><div class="thumb t3" style="background-image:url(images/videos/reel-2-rough-cut.jpg)"><video class="pv" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">2:05</span><i class="pbar" style="--dur:30s"></i></div><span class="mono">Edit</span><h3>Reel 2 Rough Cut</h3></article>
+        <article class="card vcard" id="nightCard" data-file="videos/nightshoot.mp4" data-start="15" data-title="Night Shoot" tabindex="0" role="button" aria-label="Play Night Shoot"><div class="thumb t4" style="background-image:url(images/videos/night-shoot.jpg)"><video class="pv" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">1:30</span><i class="pbar" style="--dur:30s"></i></div><span class="mono">Behind the scenes</span><h3>Night Shoot</h3></article>
+        <article class="card vcard" id="firstCard" data-file="videos/firstlook.mp4" data-start="20" data-title="First Look" tabindex="0" role="button" aria-label="Play First Look"><div class="thumb t5" style="background-image:url(images/videos/first-look.jpg)"><video class="pv" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">0:31</span><i class="pbar" style="--dur:10s"></i></div><span class="mono">Promo</span><h3>First Look</h3></article>
+        <article class="card vcard" id="trailerCard" data-file="videos/trailer.mp4" data-start="45" data-title="Trailer" tabindex="0" role="button" aria-label="Play Trailer"><div class="thumb t6" style="background-image:url(images/videos/trailer.jpg)"><video class="pv" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video><span class="live mono">Preview</span><span class="play"></span><span class="dur">2:38</span><i class="pbar" style="--dur:30s"></i></div><span class="mono">Trailer</span><h3>Trailer</h3></article>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="sec-head"><h2>Contact us</h2><span class="mono">Office and studio, Andheri West</span></div>
+      <div class="contact">
+        <div>
+          <h3>Call</h3>
+          <a class="num" href="tel:+919867028666">98670 28666</a>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:pravinarora@justvideo.co.in">pravinarora@justvideo.co.in</a></p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <p>No 37, Park Avenue Bldg, near RTO Road, Andheri West, Mumbai, Maharashtra 400053</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="brand" style="font-size:20px">Just <b>Video</b></span>
+    <span class="mono">Just Video Broadcast Pvt Ltd &middot; Update: 12 Oct 2026</span>
+  </footer>
+</div>
+
+
+
+<div id="pv" role="dialog" aria-modal="true" aria-label="Product view" aria-hidden="true">
+  <div class="pv-top">
+    <span class="pv-count" id="pvCount">1 / 1</span>
+    <button class="pv-btn" id="pvClose" type="button" aria-label="Close product view">&times;</button>
+  </div>
+  <div class="pv-stage" id="pvStage">
+    <span class="pv-hint" id="pvHint">Drag to rotate &middot; scroll or pinch to zoom</span>
+    <div class="pv-floor" id="pvFloor"></div>
+    <div class="pv-zoom" id="pvZoom">
+      <div class="pv-spin" id="pvSpin">
+        <figure class="pv-face front"><img id="pvImgF" alt=""></figure>
+        <figure class="pv-face back" aria-hidden="true"><img id="pvImgB" alt=""></figure>
+      </div>
+    </div>
+    <button class="pv-btn pv-nav pv-prev" id="pvPrev" type="button" aria-label="Previous product">&#8592;</button>
+    <button class="pv-btn pv-nav pv-next" id="pvNext" type="button" aria-label="Next product">&#8594;</button>
+  </div>
+  <div class="pv-bottom">
+    <div class="pv-info" id="pvInfo"></div>
+    <div class="pv-ctl">
+      <button class="pv-btn" id="pvPlay" type="button" aria-pressed="true">360&deg; spin</button>
+      <button class="pv-btn" id="pvOut" type="button" aria-label="Zoom out">&minus;</button>
+      <span class="pv-zl" id="pvZl">100%</span>
+      <button class="pv-btn" id="pvIn" type="button" aria-label="Zoom in">+</button>
+      <button class="pv-btn" id="pvReset" type="button">Reset</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/posters.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/main.js"></script>
+<script src="js/rental-tabs.js"></script>
+<script src="js/product-viewer.js"></script>
+</body>
+</html>
