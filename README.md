@@ -67,11 +67,6 @@ git push -u origin main
 - **Text:** edit `index.html`.
 - **Product photos:** replace a file in `images/products/` with a new one using the same name.
 - **Film posters:** add images to `images/posters/` and add their paths in `js/posters.js`.
-- **Extra videos:** the video cards Shoot Day 5, Reel 2 Rough Cut, Night Shoot, First Look and Trailer play these files. Put them in the `videos/` folder with exactly these names:
-  - `videos/shootday5.mp4`
-  - `videos/reel2.mp4`
-  - `videos/nightshoot.mp4`
-  - `videos/firstlook.mp4`
-  - `videos/trailer.mp4`
+- **Videos:** all video files are in `videos/`. To change one, replace the file with a new one using the same name (`teaser.mp4`, `shootday5.mp4`, `reel2.mp4`, `nightshoot.mp4`, `firstlook.mp4`, `trailer.mp4`). To change the length shown on a card, edit the `0:38`-style number in `index.html`.
 
 Keep each file under 100 MB (GitHub's limit per file).
